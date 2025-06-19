@@ -41,3 +41,14 @@ Fraud.csv
 ![1](screenshots/task-1/1.png)
 ![2](screenshots/task-1/2.png)
 ![3](screenshots/task-1/3.png)
+
+## Задание 2
+
+1. Был создан кластер Airflow
+![1](screenshots/task-2/1.png)
+
+2. Подготовлен DAG для автоматизации Dataproc - [тут](task-2/data_proc_dag.py)
+
+![2](screenshots/task-2/2.png)
+
+3. Подготовлен скрипт для процессинга данных - [тут](task-2/process_data.py)
