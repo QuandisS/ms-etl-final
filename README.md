@@ -44,8 +44,9 @@ Fraud.csv
 
 ## Задание 2
 
-1. Был создан кластер Airflow
+1. Был создан кластер Airflow и сервер Metastore
 ![1](screenshots/task-2/1.png)
+![3](screenshots/task-2/3.png)
 
 2. Подготовлен DAG для автоматизации Dataproc - [тут](task-2/data_proc_dag.py)
 
