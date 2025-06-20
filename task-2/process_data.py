@@ -5,8 +5,8 @@ from pyspark.sql.utils import AnalysisException
 
 spark = SparkSession.builder.appName("Transactions_v2 ETL with Logging to S3").getOrCreate()
 
-source_path = "s3a://etl-final/2025/06/19/transactions_v2.csv"
-target_path = "s3a://dataproc-etl/transactions_v2_clean.parquet"
+source_path = "s3a://ms-etl-final/raw-data/transactions_v2.csv"
+target_path = "s3a://ms-etl-final/processed-data/transactions_v2-processed.parquet"
 
 try:
     print(f"Чтение данных из: {source_path}")
@@ -41,11 +41,9 @@ try:
     print(f"Запись в Parquet: {target_path}")
     df.write.mode("overwrite").parquet(target_path)
 
-    print("✅ Данные успешно сохранены в Parquet.")
+    print("Данные сохранены в Parquet.")
 
-except AnalysisException as ae:
-    print("❌ Ошибка анализа:", ae)
 except Exception as e:
-    print("❌ Общая ошибка:", e)
+    print("Ошибка:", e)
 
 spark.stop()

@@ -50,6 +50,13 @@ Fraud.csv
 
 2. Подготовлен DAG для автоматизации Dataproc - [тут](task-2/data_proc_dag.py)
 
-![2](screenshots/task-2/2.png)
 
 3. Подготовлен скрипт для процессинга данных - [тут](task-2/process_data.py)
+
+4. DAG запущен и успешно выполнен.
+
+![2](screenshots/task-2/2.png)
+
+5. Полученные результаты сохранены в Object Storage в формате parquet:
+
+![4](screenshots/task-2/4.png)

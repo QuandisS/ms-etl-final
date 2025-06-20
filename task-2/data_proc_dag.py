@@ -11,10 +11,10 @@ from airflow.providers.yandex.operators.yandexcloud_dataproc import (
 # Данные вашей инфраструктуры
 YC_DP_AZ = 'ru-central1-a'
 YC_DP_SSH_PUBLIC_KEY = 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIExp2ez+oip0e94IwhaPC9dOW9BxxE1frjMzGEkceWdu quandis@ENTERPRISE'
-YC_DP_SUBNET_ID = 'e9btfqefvs4ved64rkg6'
-YC_DP_SA_ID = 'aje6c65bhr5p4rocg5sh'
-YC_DP_METASTORE_URI = '10.128.0.9'
-YC_BUCKET = 'dataproc-etl'
+YC_DP_SUBNET_ID = 'e9brnplh0udddoivobeg'
+YC_DP_SA_ID = 'ajeun56hkbfrll2qkf0r'
+YC_DP_METASTORE_URI = '10.128.0.22'
+YC_BUCKET = 'ms-etl-final'
 
 # Настройки DAG
 with DAG(
